@@ -71,11 +71,11 @@ const Index = () => {
       <div className='flex mt-13'>
         <h1 className='m-auto text-[30px] font-[kanit] tracking-wider'>Shop By Category</h1>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-10 px-20 mt-10'>
+      <div className='m-auto justify-between mt-10 flex flex-cols-3 gap-10 px-20'>
           {categories.map ((categories,index) => (
             <div key = {index} className='cursor-pointer'>
               <img className='w-80 h-90 hover:scale-105 transition-all duration-550' src={categories.src} alt="categoryImages" />
-              <h1 className='mt-4 font-[kanit] text-[20px] text-[#000000] text-center'>{categories.title}</h1>
+              <h1 className='m-auto mt-4 font-[kanit] text-[20px] text-[#000000] text-center'>{categories.title}</h1>
             </div>
           ))}
         </div>
