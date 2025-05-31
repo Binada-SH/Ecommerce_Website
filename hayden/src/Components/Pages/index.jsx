@@ -2,25 +2,30 @@ import React from 'react';
 import Hero from "../../assets/hero-bg-2.webp";
 import Skin from "../../assets/product-1-1.webp";
 import Hair from "../../assets/product-7-1.webp";
-import Tool from "../../assets/product-14-2.webp";
+import Tool from "../../assets/product-15-2.webp";
 
 const categories = [
   {
     src: Skin,
     title: "SkinCare",
-    description: "Our SkinCare products"
+    description: "Nourish your skin with our gentle yet powerful cleansers, moisturizers, and serums — designed to hydrate, restore, and reveal a radiant glow.",
+    target: "URL"
   },
 
   {
     src: Hair,
     title: "HairCare",
-    description: "Our Haircare products"
+    description: "From revitalizing shampoos to nourishing oils, treat your hair to the care it deserves. Stronger, shinier, and healthier strands start here.",
+    target: "URL"
+
   },
 
    {
     src: Tool,
     title: "BeautyItems",
-    description: "Our Beauty Equipments"
+    description: "Level up your routine with pro-grade beauty tools. From jade rollers to makeup brushes, get the flawless finish you love — effortlessly.",
+    target: "URL"
+
   }
 ]
 
@@ -39,6 +44,14 @@ const Index = () => {
       <div className='flex mt-13'>
         <h1 className='m-auto text-[30px] font-[kanit] tracking-wider'>Shop By Category</h1>
       </div>
+      <div className='m-auto justify-between mt-10 flex flex-cols-3 gap-10 px-20'>
+          {categories.map ((categories,index) => (
+            <div key = {index} className='cursor-pointer'>
+              <img className='w-80 h-90 hover:scale-105 transition-all duration-550' src={categories.src} alt="categoryImages" />
+              <h1 className='mt-4 font-[kanit] text-[20px] text-[#000000] text-center'>{categories.title}</h1>
+            </div>
+          ))}
+        </div>
     </div>
   );
 };
