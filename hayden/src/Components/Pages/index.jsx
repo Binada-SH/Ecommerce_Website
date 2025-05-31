@@ -52,6 +52,10 @@ const Index = () => {
             </div>
           ))}
         </div>
+        <div className='flex mt-23'>
+        <h1 className='m-auto text-[30px] font-[kanit] tracking-wider'>Featured Products</h1>
+      </div>
+
     </div>
   );
 };
