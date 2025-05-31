@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import gsap from "gsap";
 
 const Navbar = () => {
+
+    const fadedown = useRef(null);
+    useEffect (() => {
+        gsap.fromTo(
+            fadedown.current,
+            {
+                opacity: 0, y: (-60)
+            },
+            {
+                opacity: 1, y: 0, duration: 0.5, ease: "power2.out",
+            }
+        );
+    },[]);
   return (
-    <div className='w-full max-w-2560 h-18 top-0 left-0 fixed flex items-center justify-between px-6 py-2 bg-[#ffffff] shadow-md'>
+    <div className='w-full max-w-2560 h-18 top-0 left-0 fixed flex items-center justify-between px-6 py-2 bg-[#ffffff] shadow-md' ref={fadedown} style={{opacity: 0}}>
         <ul className='flex items-center gap-8 font-[jura] text-[14px] px-10'>
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
