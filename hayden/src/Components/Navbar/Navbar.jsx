@@ -16,7 +16,7 @@ const Navbar = () => {
         );
     },[]);
   return (
-    <div className='w-full max-w-2560 h-18 top-0 left-0 fixed flex items-center justify-between px-6 py-2 bg-[#ffffff] shadow-md' ref={fadedown} style={{opacity: 0}}>
+    <div className='z-10 w-full max-w-2560 h-18 top-0 left-0 fixed flex items-center justify-between px-6 py-2 bg-[#ffffff] shadow-md' ref={fadedown} style={{opacity: 0}}>
         <ul className='hidden lg:flex items-center gap-8 font-[jura] text-[14px] px-10'>
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
