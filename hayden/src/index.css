@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'jura';
+  src: url('/fonts/Jura-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'now';
+  src: url('/fonts/now.thin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'kanit';
+  src: url('/fonts/Kanit-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
