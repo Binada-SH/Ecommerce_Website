@@ -5,11 +5,11 @@ import Index from './Components/Pages/index';
 
 function App() {
   return (
-    <>
+    <div className='overflow-hidden'>
     <Navbar/>
     <Index/>
     
-    </>
+    </div>
   )
 }
 
